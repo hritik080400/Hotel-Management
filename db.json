@@ -1,0 +1,324 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "name": "Pizza"
+    },
+    {
+      "id": "2",
+      "name": "Pasta"
+    },
+    {
+      "id": "3",
+      "name": "Main Course"
+    },
+    {
+      "id": "bc2d",
+      "name": "maharstra"
+    }
+  ],
+  "menu": [
+    {
+      "id": "1",
+      "category": "Pizza",
+      "items": [
+        {
+          "Name": "7 Cheesy Pizza",
+          "Price": 250
+        }
+      ]
+    },
+    {
+      "id": "5ba4",
+      "category": "maharstra",
+      "items": [
+        {
+          "Name": "kandabhaji",
+          "Price": 123
+        }
+      ]
+    },
+    {
+      "id": "efd7",
+      "category": "maharstra",
+      "items": [
+        {
+          "Name": "Vadapav",
+          "Price": 15
+        }
+      ]
+    },
+    {
+      "id": "e3d2",
+      "category": "Pizza",
+      "items": [
+        {
+          "Name": "Vadapav",
+          "Price": 15
+        }
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "id": "1",
+      "area": "AC",
+      "tables": [
+        "AC1",
+        "AC2",
+        "AC3",
+        "AC4"
+      ]
+    },
+    {
+      "id": "bc12",
+      "area": "AC",
+      "tables": [
+        "A11"
+      ]
+    }
+  ],
+  "orders": [
+    {
+      "id": "a7da",
+      "table": "A11",
+      "items": [
+        {
+          "name": "kandabhaji",
+          "qty": 1,
+          "price": 123
+        }
+      ],
+      "total": 123,
+      "print": false
+    },
+    {
+      "id": "dc0e",
+      "table": "AC3",
+      "items": [
+        {
+          "name": "kandabhaji",
+          "qty": 1,
+          "price": 123
+        }
+      ],
+      "total": 123,
+      "print": false
+    },
+    {
+      "id": "ca55",
+      "table": "A11",
+      "items": [
+        {
+          "name": "7 Cheesy Pizza",
+          "qty": 2,
+          "price": 250
+        }
+      ],
+      "total": 500,
+      "paymentMethod": "Cash",
+      "print": false
+    },
+    {
+      "id": "9394",
+      "table": "AC2",
+      "items": [
+        {
+          "name": "7 Cheesy Pizza",
+          "qty": 1,
+          "price": 250
+        }
+      ],
+      "total": 250,
+      "paymentMethod": "Cash",
+      "print": false
+    },
+    {
+      "id": "072a",
+      "table": "A11",
+      "items": [
+        {
+          "name": "kandabhaji",
+          "qty": 1,
+          "price": 123
+        }
+      ],
+      "total": 123,
+      "paymentMethod": "Cash",
+      "print": false
+    },
+    {
+      "id": "2db8",
+      "table": "AC1",
+      "items": [
+        {
+          "name": "7 Cheesy Pizza",
+          "qty": 1,
+          "price": 250
+        }
+      ],
+      "total": 250,
+      "paymentMethod": "Cash",
+      "print": false
+    },
+    {
+      "id": "bf48",
+      "table": "AC2",
+      "items": [
+        {
+          "name": "kandabhaji",
+          "qty": 1,
+          "price": 123
+        }
+      ],
+      "total": 123,
+      "paymentMethod": "Cash",
+      "print": false
+    },
+    {
+      "id": "cab3",
+      "table": "AC4",
+      "items": [
+        {
+          "name": "kandabhaji",
+          "qty": 1,
+          "price": 123
+        }
+      ],
+      "total": 123,
+      "paymentMethod": "Cash",
+      "print": false
+    },
+    {
+      "id": "e468",
+      "table": "AC3",
+      "items": [
+        {
+          "name": "kandabhaji",
+          "qty": 1,
+          "price": 123
+        }
+      ],
+      "total": 123,
+      "paymentMethod": "Cash",
+      "print": false
+    },
+    {
+      "id": "9607",
+      "table": "AC2",
+      "items": [
+        {
+          "name": "7 Cheesy Pizza",
+          "qty": 1,
+          "price": 250
+        }
+      ],
+      "total": 250,
+      "paymentMethod": "Cash",
+      "print": false
+    },
+    {
+      "id": "40d3",
+      "table": "AC4",
+      "items": [
+        {
+          "name": "7 Cheesy Pizza",
+          "qty": 1,
+          "price": 250
+        }
+      ],
+      "total": 250,
+      "paymentMethod": "Cash",
+      "print": false
+    },
+    {
+      "id": "5ece",
+      "table": "AC1",
+      "items": [
+        {
+          "name": "7 Cheesy Pizza",
+          "qty": 1,
+          "price": 250
+        }
+      ],
+      "total": 250,
+      "paymentMethod": "Cash",
+      "print": false
+    },
+    {
+      "id": "38b5",
+      "table": "AC2",
+      "items": [
+        {
+          "name": "kandabhaji",
+          "qty": 1,
+          "price": 123
+        }
+      ],
+      "total": 123,
+      "paymentMethod": "Cash",
+      "print": false
+    },
+    {
+      "id": "dc59",
+      "table": "AC4",
+      "items": [
+        {
+          "name": "kandabhaji",
+          "qty": 1,
+          "price": 123
+        }
+      ],
+      "total": 123,
+      "paymentMethod": "Cash",
+      "print": false
+    },
+    {
+      "id": "801a",
+      "table": "AC2",
+      "items": [
+        {
+          "name": "7 Cheesy Pizza",
+          "qty": 1,
+          "price": 250
+        },
+        {
+          "name": "kandabhaji",
+          "qty": 1,
+          "price": 123
+        }
+      ],
+      "total": 373,
+      "paymentMethod": "Cash",
+      "print": false
+    },
+    {
+      "id": "b27a",
+      "table": "AC1",
+      "items": [
+        {
+          "name": "7 Cheesy Pizza",
+          "qty": 1,
+          "price": 250
+        }
+      ],
+      "total": 250,
+      "paymentMethod": "Cash",
+      "print": false
+    },
+    {
+      "id": "49b6",
+      "table": "AC2",
+      "items": [
+        {
+          "name": "7 Cheesy Pizza",
+          "qty": 1,
+          "price": 250
+        }
+      ],
+      "total": 250,
+      "paymentMethod": "Cash",
+      "print": true
+    }
+  ]
+}
