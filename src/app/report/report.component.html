@@ -1,0 +1,43 @@
+<div class="container mt-4">
+  <div class="card shadow-sm">
+    <div class="card-body">
+      <h4 class="card-title text-primary mb-4">🧾 Orders Report</h4>
+
+      <div *ngIf="orders.length === 0" class="text-muted">No orders found.</div>
+
+      <table *ngIf="orders.length > 0" class="table table-bordered table-hover">
+        <thead class="table-primary">
+          <tr>
+            <th>#</th>
+            <th>Table</th>
+            <th>Items</th>
+            <th>Total Qty</th>
+            <th>Total (₹)</th>
+            <th>Type</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let order of orders; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ order.table }}</td>
+            <td>
+              <ul class="mb-0">
+                <li *ngFor="let item of order.items">
+                  {{ item.name }} - ₹{{ item.price }} x {{ item.qty }}
+                </li>
+              </ul>
+            </td>
+            <td>{{ getTotalQty(order) }}</td>
+            <td>₹{{ order.total }}</td>
+            <td>
+              <span [ngClass]="order.print ? 'text-primary' : 'text-success'">
+                {{ order.print ? 'Print' : 'E-Bill' }}
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,58 @@
+<div class="container mt-4">
+  <div class="card shadow-sm">
+    <div class="card-body">
+      <h4 class="card-title mb-4 text-primary">➕ Add New Item</h4>
+
+      <form class="row g-3">
+        <!-- Category Dropdown -->
+        <div class="col-md-4">
+          <label for="categorySelect" class="form-label">Category</label>
+          <select
+            id="categorySelect"
+            class="form-select"
+            [(ngModel)]="selectedCategory"
+            name="category"
+          >
+            <option *ngFor="let cat of categories" [value]="cat">
+              {{ cat }}
+            </option>
+          </select>
+        </div>
+
+        <!-- Item Name -->
+        <div class="col-md-4">
+          <label for="itemName" class="form-label">Item Name</label>
+          <input
+            type="text"
+            id="itemName"
+            class="form-control"
+            placeholder="e.g., Paneer Tikka"
+            [(ngModel)]="itemName"
+            name="itemName"
+          />
+        </div>
+
+        <!-- Price -->
+        <div class="col-md-3">
+          <label for="price" class="form-label">Price (₹)</label>
+          <input
+            type="number"
+            id="price"
+            class="form-control"
+            placeholder="e.g., 150"
+            [(ngModel)]="price"
+            name="price"
+          />
+        </div>
+
+        <!-- Add Button -->
+        <div class="col-md-1 d-flex align-items-end">
+          <button type="button" class="btn btn-success w-100" (click)="add()">
+            Add
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+

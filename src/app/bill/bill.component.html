@@ -1,0 +1,29 @@
+<div #billContent>
+  <h3 style="text-align: center;">PETPOOJA</h3>
+  <p style="text-align: center;">Ahmedabad - RashidSiddiqui - Demo<br>Visit Again</p>
+
+  <p>Name: {{ order.customerName }}<br>
+     Date: {{ order.date | date: 'dd/MM/yy HH:mm' }}<br>
+     Table: {{ order.table }}</p>
+
+  <table width="100%" border="1" style="border-collapse: collapse; text-align: left;">
+    <thead>
+      <tr><th>Item</th><th>Qty</th><th>Price</th><th>Amount</th></tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of order.items">
+        <td>{{ item.Name }}</td>
+        <td>{{ item.qty }}</td>
+        <td>{{ item.Price }}</td>
+        <td>{{ item.Price * item.qty }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>Sub Total: ₹{{ total }}</p>
+  <p>Service Charge: ₹{{ serviceCharge }}</p>
+  <p>CGST (2.5%): ₹{{ cgst }}</p>
+  <p>SGST (2.5%): ₹{{ sgst }}</p>
+  <h4>Grand Total: ₹{{ grandTotal }}</h4>
+  <p style="text-align: center;">Thanks</p>
+</div>

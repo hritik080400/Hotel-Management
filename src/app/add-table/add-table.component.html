@@ -1,0 +1,46 @@
+<div class="container mt-4">
+  <div class="card shadow-sm">
+    <div class="card-body">
+      <h4 class="card-title text-primary mb-4">🪑 Add Table</h4>
+
+      <form class="row g-3 align-items-end">
+        <!-- Area Input -->
+        <div class="col-md-5">
+          <label for="areaInput" class="form-label">Area</label>
+          <input
+            type="text"
+            class="form-control"
+            id="areaInput"
+            placeholder="e.g., Ground Floor"
+            [(ngModel)]="area"
+            name="area"
+          />
+        </div>
+
+        <!-- Table Name Input -->
+        <div class="col-md-5">
+          <label for="tableNameInput" class="form-label">Table Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="tableNameInput"
+            placeholder="e.g., T1"
+            [(ngModel)]="tableName"
+            name="tableName"
+          />
+        </div>
+
+        <!-- Add Button -->
+        <div class="col-md-2">
+          <button
+            type="button"
+            class="btn btn-success w-100"
+            (click)="add()"
+          >
+            Add
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
